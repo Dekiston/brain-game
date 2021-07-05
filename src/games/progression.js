@@ -43,17 +43,17 @@ export const progression = () => {
     console.log ("What number is missing in the progression?");
     let [useranswer, answer] = quest();
 
-    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
+    if (check(useranswer, answer) == false) {console.log (`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' +  `'${answer}'` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     [useranswer, answer] = quest();
 
-    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
+    if (check(useranswer, answer) == false) {console.log (`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' +  `'${answer}'` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     [useranswer, answer] = quest();
     
-    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
+    if (check(useranswer, answer) == false) {console.log (`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' +  `'${answer}'` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     console.log ('Congratulations, ' + `${name}` + '!');
