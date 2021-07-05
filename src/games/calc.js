@@ -33,13 +33,13 @@ export const calc = () => {
 
     console.log ('What is the result of the expression?'); 
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     console.log ('Congratulations, ' + `${name}` + '!');

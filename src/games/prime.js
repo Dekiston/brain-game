@@ -33,13 +33,13 @@ export const prime = () => {
 
     console.log ('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (isPrime() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     console.log ('Congratulations, ' + `${name}` + '!');

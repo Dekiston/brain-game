@@ -21,13 +21,13 @@ let name = hello();
 
 console.log ("Find the greatest common divisor of given numbers.");
 
-if (quest () == false) {console.log ("Let's try again, " + `${name}` + '\n');
+if (quest () == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
 return;}
 
-if (quest () == false) {console.log ("Let's try again, " + `${name}` + '\n');
+if (quest () == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
 return;}
 
-if (quest () == false) {console.log ("Let's try again, " + `${name}` + '\n');
+if (quest () == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
 return;}
 
 console.log ('Congratulations, ' + `${name}` + '!');

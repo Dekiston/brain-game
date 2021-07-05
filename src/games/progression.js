@@ -40,13 +40,13 @@ export const progression = () => {
     
     console.log ("What number is missing in the progression?");
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     console.log ('Congratulations, ' + `${name}` + '!');

@@ -20,13 +20,13 @@ export const even = () => {
 
     }
 
-    if (questions (15) == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (questions (15) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
     
-    if (questions (6) == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (questions (6) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n' );
     return;}
     
-    if (questions (7) == false) {console.log ("Let's try again, " + `${name}` + '\n');
+    if (questions (7) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
 
