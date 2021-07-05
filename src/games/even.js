@@ -10,29 +10,29 @@ export const even = () => {
   const questions = (question) => {
     let answer = '';
 
-    const useranswer = readlineSync.question('Question: ' + `${question}` + '\n' + 'Your answer: ');
+    const useranswer = readlineSync.question(`Question: ${question}\nYour answer: `);
 
     if (question % 2 == 0) { answer = 'yes'; } else { answer = 'no'; }
-    console.log (answer);
+    
 
     return check(useranswer, answer);
   };
 
   if (questions(15) == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
   if (questions(6) == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
   // eslint-disable-next-line eqeqeq
   if (questions(7) == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
-  console.log('Congratulations, ' + `${name}` + '!');
+  console.log(`Congratulations, ${name}!`);
 };

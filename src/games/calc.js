@@ -21,8 +21,8 @@ const quest = (x = Math.floor(Math.random() * 200), y = Math.floor(Math.random()
     default:
       answer = 0;
   }
-console.log (answer);
-  const useranswer = readlineSync.question('Question: ' + `${x}` + ' ' + `${symbol}` + ' ' + `${y}` + ' = ');
+
+  const useranswer = readlineSync.question(`Question: ${x} ${symbol} ${y} = `);
 
   return check(useranswer, answer);
 };
@@ -33,20 +33,20 @@ export const calc = () => {
 
   console.log('What is the result of the expression?');
 
-  if (quest() == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+  if (quest() === false) {
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
-  if (quest() == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+  if (quest() === false) {
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
-  if (quest() == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
+  if (quest() === false) {
+    console.log(`Let's try again, ${name}! \n`);
     return;
   }
 
-  console.log('Congratulations, ' + `${name}` + '!');
+  console.log(`Congratulations, ${name}!`);
 };

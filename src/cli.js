@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
 
 export const hello = () => {
@@ -5,19 +6,20 @@ export const hello = () => {
 
   const name = readlineSync.question('May I have your name? ');
 
-  console.log('Hello, ' + `${name}`);
+  console.log(`Hello, ${name}`);
 
   return name;
 };
 
 export const check = (useranswer, answer) => {
-  if (useranswer == answer) { console.log('Correct!' + '\n'); } else { return false; }
+  if (`${useranswer}` === `${answer}`) { console.log('Correct! \n'); } else { return false; }
+  return true;
 };
 
-export const getRandom = (min, max) => {
-  min = Math.ceil(min);
+export const getRandom = (minnum, maxnum) => {
+  const min = Math.ceil(minnum);
 
-  max = Math.floor(max);
+  const max = Math.floor(maxnum);
 
   return Math.floor(Math.random() * (max - min)) + min;
 };

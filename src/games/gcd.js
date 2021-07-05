@@ -10,7 +10,6 @@ const quest = (x = Math.floor((Math.random() + 1) * 20), y = Math.floor((Math.ra
   const answer = getGcd(x, y);
 
   const useranswer = readlineSync.question('Question: ' + `${x}` + ' ' + `${y}` + ' = ');
-
   return check(useranswer, answer);
 };
 
@@ -19,17 +18,17 @@ export const gcd = () => {
 
   console.log('Find the greatest common divisor of given numbers.');
 
-  if (quest() == false) {
+  if (quest() === false) {
+    console.log(`Let's try again, ${name}!\n`);
+    return;
+  }
+
+  if (quest() === false) {
     console.log("Let's try again, " + `${name}` + '!' + '\n');
     return;
   }
 
-  if (quest() == false) {
-    console.log("Let's try again, " + `${name}` + '!' + '\n');
-    return;
-  }
-
-  if (quest() == false) {
+  if (quest() === false) {
     console.log("Let's try again, " + `${name}` + '!' + '\n');
     return;
   }
