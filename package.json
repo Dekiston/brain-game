@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/Dekiston/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Dekiston/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Dekiston/frontend-project-lvl1#readme",
+  "type": "module",
+  "dependencies": {
+    "natives": "^1.1.6",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {}
 }
