@@ -46,12 +46,12 @@ export const progression = () => {
     if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    lett [useranswer, answer] = quest();
+    let [useranswer, answer] = quest();
 
     if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    lett [useranswer, answer] = quest();
+    let [useranswer, answer] = quest();
     if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
