@@ -13,7 +13,7 @@ export const even = () => {
 
         let useranswer = readlineSync.question('Question: ' + `${question}` + '\n' + 'Your answer: ');
 
-        if (question % 2 == 0) {ans = 'yes'}
+        if (question % 2 == 0) {answer = 'yes'}
         else {answer = 'no'}
 
         return check (useranswer, answer);
