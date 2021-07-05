@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import { hello, check } from '../cli.js';
 
+// eslint-disable-next-line import/prefer-default-export
 export const even = () => {
   const name = hello();
 
@@ -16,17 +17,18 @@ export const even = () => {
     return check(useranswer, answer);
   };
 
-  if (questions(15) === false) {
+  if (questions(15) == false) {
     console.log("Let's try again, " + `${name}` + '!' + '\n');
     return;
   }
 
-  if (questions(6) === false) {
+  if (questions(6) == false) {
     console.log("Let's try again, " + `${name}` + '!' + '\n');
     return;
   }
 
-  if (questions(7) === false) {
+  // eslint-disable-next-line eqeqeq
+  if (questions(7) == false) {
     console.log("Let's try again, " + `${name}` + '!' + '\n');
     return;
   }
