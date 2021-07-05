@@ -1,0 +1,27 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/Dekiston/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Dekiston/frontend-project-lvl1/actions)",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dekiston/frontend-project-lvl1.git"
+  },
+  "author": "Dekiston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dekiston/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Dekiston/frontend-project-lvl1#readme"
+}
