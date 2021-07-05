@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { hello, check } from '../cli';
+import { hello, check } from '../cli.js';
 
 export const even = () => {
   const name = hello();
