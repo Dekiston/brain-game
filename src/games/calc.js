@@ -22,7 +22,7 @@ switch (symbol) {
     default:
         answer = 0; }
 
-const useranswer = readlineSync.question ("Question: " + `${x}` + `${symbol}` + `${y}` + " = ");
+const useranswer = readlineSync.question ("Question: " + `${x}` + " " + `${symbol}` + " " + `${y}` + " = ");
 
 return check (useranswer, answer);
 }
