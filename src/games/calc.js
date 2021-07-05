@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
 import { hello, check } from '../cli.js';
 
@@ -34,6 +35,7 @@ export const calc = () => {
   console.log('What is the result of the expression?');
 
   if (quest() === false) {
+    // eslint-disable-next-line no-console
     console.log(`Let's try again, ${name}! \n`);
     return;
   }

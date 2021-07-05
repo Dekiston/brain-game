@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
 import { hello, check, getRandom } from '../cli.js';
 
@@ -6,11 +7,10 @@ const random = () => {
   const progress = getRandom(1, 11);
   const lengths = getRandom(5, 11);
   const space = Math.floor(Math.random() * (lengths - 1));
-  const symbol = '+';
-  return [firstnumber, progress, lengths, space, symbol];
+  return [firstnumber, progress, lengths, space];
 };
 const quest = () => {
-  const [firstnumber, progress, lengths, space, symbol] = random();
+  const [firstnumber, progress, lengths, space] = random();
   let result = [];
   let i = 0;
   let lastnumber = firstnumber;
@@ -34,24 +34,24 @@ export const progression = () => {
   console.log('What number is missing in the progression?');
   let [useranswer, answer] = quest();
 
-  if (check(useranswer, answer) == false) {
-    console.log(`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' + `'${answer}'` + ". \n Let's try again, " + `${name}` + '!' + '\n');
+  if (check(useranswer, answer) === false) {
+    console.log(`'${useranswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!\n`);
     return;
   }
 
   [useranswer, answer] = quest();
 
-  if (check(useranswer, answer) == false) {
-    console.log(`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' + `'${answer}'` + ". \n Let's try again, " + `${name}` + '!' + '\n');
+  if (check(useranswer, answer) === false) {
+    console.log(`'${useranswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!\n`);
     return;
   }
 
   [useranswer, answer] = quest();
 
-  if (check(useranswer, answer) == false) {
-    console.log(`'${useranswer}'` + ' is wrong answer ;(. Correct answer was ' + `'${answer}'` + ". \n Let's try again, " + `${name}` + '!' + '\n');
+  if (check(useranswer, answer) === false) {
+    console.log(`'${useranswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!\n`);
     return;
   }
 
-  console.log('Congratulations, ' + `${name}` + '!');
+  console.log(`Congratulations, ${name}!`);
 };
