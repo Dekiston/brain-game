@@ -28,7 +28,7 @@ const quest = () => {
   return [useranswer, answer];
 };
 
-export const progression = () => {
+const progression = () => {
   const name = hello();
 
   console.log('What number is missing in the progression?');
@@ -55,3 +55,4 @@ export const progression = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
+export default progression;

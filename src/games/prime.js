@@ -27,7 +27,7 @@ const isPrime = () => {
   return check(useranswer, answer);
 };
 
-export const prime = () => {
+const prime = () => {
   const name = hello();
 
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -49,3 +49,5 @@ export const prime = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
+
+export default prime;
