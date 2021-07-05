@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
-import {hello, check} from '../cli.js';
+import {hello, check, getRandom} from '../cli.js';
 
 const random = () => {
-    let firstnumber = Math.floor(Math.random() * (10) + 1);
-    let progress = Math.floor(Math.random()* (5) + 1);
-    let lengths = Math.floor(Math.random() * (5) + 7);
+    let firstnumber = getRandom (1, 11);
+    let progress = getRandom (1, 11);
+    let lengths = getRandom (6, 11)
     let space = Math.floor(Math.random() * (lengths - 1));
     let symbol = ['+','*'];
-    symbol = symbol[Math.floor(Math.random() + 0.5)];
+    symbol = symbol[getRandom(0, 2)];
     return [firstnumber, progress, lengths, space, symbol];
     
 }
@@ -29,7 +29,8 @@ const quest = () => {
     let answer = result[space];
     result[space] = '..';
     console.log (answer);
-    const useranswer = readlineSync.question ("Question: " + `${result}` + " = ");
+
+    const useranswer = readlineSync.question ("Question: " + result + " = ");
 
     return check (useranswer, answer);
 }
