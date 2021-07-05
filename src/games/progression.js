@@ -6,8 +6,7 @@ const random = () => {
     let progress = getRandom (1, 11);
     let lengths = getRandom (5, 11);
     let space = Math.floor(Math.random() * (lengths - 1));
-    let symbol = ['+','*'];
-    symbol = symbol[getRandom(0, 2)];
+    let symbol = '+';
     return [firstnumber, progress, lengths, space, symbol];
     
 }
@@ -18,12 +17,7 @@ const quest = () => {
     let lastnumber = firstnumber;
     while (i < lengths) {
         result.push (lastnumber);
-        switch (symbol) {
-            case '+': lastnumber = lastnumber + progress
-            break;
-
-            case '*': lastnumber = lastnumber * progress
-            break; }
+        lastnumber = lastnumber + progress
         i += 1;
     }
     let answer = result[space];
