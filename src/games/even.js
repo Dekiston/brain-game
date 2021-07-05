@@ -1,34 +1,35 @@
 import readlineSync from 'readline-sync';
-import {hello, check} from '../cli.js';
+import { hello, check } from '../cli';
 
 export const even = () => {
+  const name = hello();
 
-    let name = hello();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-    console.log ('Answer "yes" if the number is even, otherwise answer "no".'); 
+  const questions = (question) => {
+    let answer = '';
 
-    const questions = (question) => {
+    const useranswer = readlineSync.question('Question: ' + `${question}` + '\n' + 'Your answer: ');
 
-        let answer = '';
+    if (question % 2 == 0) { answer = 'yes'; } else { answer = 'no'; }
 
-        let useranswer = readlineSync.question('Question: ' + `${question}` + '\n' + 'Your answer: ');
+    return check(useranswer, answer);
+  };
 
-        if (question % 2 == 0) {answer = 'yes'}
-        else {answer = 'no'}
+  if (questions(15) === false) {
+    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    return;
+  }
 
-        return check (useranswer, answer);
+  if (questions(6) === false) {
+    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    return;
+  }
 
-    }
+  if (questions(7) === false) {
+    console.log("Let's try again, " + `${name}` + '!' + '\n');
+    return;
+  }
 
-    if (questions (15) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
-    return;}
-    
-    if (questions (6) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n' );
-    return;}
-    
-    if (questions (7) == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
-    return;}
-
-
-    console.log ('Congratulations, ' + `${name}` + "!");
-}
+  console.log('Congratulations, ' + `${name}` + '!');
+};
