@@ -29,26 +29,30 @@ const quest = () => {
     let answer = result[space];
     result[space] = '..';
     result = result.join (' ');
-    console.log (answer);
 
     const useranswer = readlineSync.question ("Question: " + result + " = ");
 
-    return check (useranswer, answer);
+    return [useranswer, answer];
 }
 
 export const progression = () => {
 
+    
     let name = hello();
     
     console.log ("What number is missing in the progression?");
+    let [useranswer, answer] = quest();
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
+    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
+    lett [useranswer, answer] = quest();
+
+    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
-    if (quest() == false) {console.log ("Let's try again, " + `${name}` +  "!" + '\n');
+    lett [useranswer, answer] = quest();
+    if (check(useranswer, answer) == false) {console.log (`${useranswer}` + ' is wrong answer ;(. Correct answer was ' +  `${answer}` +  ". \n Let's try again, " + `${name}` +  "!" + '\n');
     return;}
 
     console.log ('Congratulations, ' + `${name}` + '!');
