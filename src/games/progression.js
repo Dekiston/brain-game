@@ -4,7 +4,7 @@ import {hello, check, getRandom} from '../cli.js';
 const random = () => {
     let firstnumber = getRandom (1, 11);
     let progress = getRandom (1, 11);
-    let lengths = getRandom (6, 11)
+    let lengths = getRandom (5, 11);
     let space = Math.floor(Math.random() * (lengths - 1));
     let symbol = ['+','*'];
     symbol = symbol[getRandom(0, 2)];
@@ -14,7 +14,7 @@ const random = () => {
 const quest = () => {
     const [firstnumber, progress, lengths, space, symbol] = random();
     let result = [];
-    let i = 1;
+    let i = 0;
     let lastnumber = firstnumber;
     while (i < lengths) {
         result.push (lastnumber);
@@ -28,6 +28,7 @@ const quest = () => {
     }
     let answer = result[space];
     result[space] = '..';
+    result = result.join (' ');
     console.log (answer);
 
     const useranswer = readlineSync.question ("Question: " + result + " = ");
