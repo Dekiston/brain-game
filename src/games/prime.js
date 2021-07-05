@@ -42,5 +42,5 @@ export const prime = () => {
     if (isPrime() == false) {console.log ("Let's try again, " + `${name}` + '\n');
     return;}
 
-    console.log ('Congratulations, ' + `${name}`);
+    console.log ('Congratulations, ' + `${name}` + '!');
 }
