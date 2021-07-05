@@ -27,6 +27,7 @@ const quest = (x = Math.floor(Math.random() * 200), y = Math.floor(Math.random()
   return check(useranswer, answer);
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export const calc = () => {
   const name = hello();
 
