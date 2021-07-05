@@ -13,6 +13,7 @@ export const even = () => {
     const useranswer = readlineSync.question('Question: ' + `${question}` + '\n' + 'Your answer: ');
 
     if (question % 2 == 0) { answer = 'yes'; } else { answer = 'no'; }
+    console.log (answer);
 
     return check(useranswer, answer);
   };

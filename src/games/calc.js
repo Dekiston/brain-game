@@ -21,7 +21,7 @@ const quest = (x = Math.floor(Math.random() * 200), y = Math.floor(Math.random()
     default:
       answer = 0;
   }
-
+console.log (answer);
   const useranswer = readlineSync.question('Question: ' + `${x}` + ' ' + `${symbol}` + ' ' + `${y}` + ' = ');
 
   return check(useranswer, answer);

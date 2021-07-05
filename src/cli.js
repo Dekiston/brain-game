@@ -11,7 +11,7 @@ export const hello = () => {
 };
 
 export const check = (useranswer, answer) => {
-  if (useranswer === answer) { console.log('Correct!' + '\n'); } else { return false; }
+  if (useranswer == answer) { console.log('Correct!' + '\n'); } else { return false; }
 };
 
 export const getRandom = (min, max) => {
