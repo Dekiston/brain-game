@@ -3,12 +3,7 @@ import readlineSync from 'readline-sync';
 import { hello, check } from '../cli.js';
 
 // eslint-disable-next-line import/prefer-default-export
-export const even = () => {
-  const name = hello();
-
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  const questions = (question) => {
+const questions = (question) => {
     let answer = '';
 
     const useranswer = readlineSync.question(`Question: ${question}\nYour answer: `);
@@ -17,6 +12,11 @@ export const even = () => {
 
     return check(useranswer, answer);
   };
+
+export const even = () => {
+  const name = hello();
+
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   if (questions(15) === false) {
     console.log(`Let's try again, ${name}! \n`);
