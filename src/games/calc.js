@@ -7,7 +7,7 @@ const quest = (x = Math.floor(Math.random() * 200), y = Math.floor(Math.random()
 
   const symbol = symbols[Math.floor(Math.random() * 3)];
 
-  let answer = 0;
+  let answers = 0;
 
   switch (symbol) {
     case '+':
